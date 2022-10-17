@@ -1,3 +1,44 @@
 /* Importing a google font */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
+body {
+    background-color: #eee;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+
+    font-weight: 700;
+    /* font: bold */
+
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+
+    /* Vw sets the font/ text size based on the width of the viewport (aka Browser Window) */
+    font-size: 2vw;
+
+    border-bottom: 5px solid #ccc;
+    padding-bottom: 10px;
+
+    /* Width of the two middle images */
+    /* 22.5 * 2 = 45  */
+    /* width between two images */
+    /* 1.25 * 2 = 2.5 */
+    /* both together  */
+    /* 45 + 2.5 = 47.5 */
+    width: 47.5%;
+
+    /* "Margin:auto;" centers the P element horizontally inside of the body element */
+    margin: auto;
+}
+
+img {
+    /* 22.5 * 4 = 90 */
+    width: 22.5%;
+    /* 1.25 * 8 = 10 */
+    margin: 1.25% ;
+
+    /* gets rid of the extra space and places it on the left or right side of its container or parent element allowing text or inline/inline-block elements to wrap around it. the element is removed from the normal document flow. also, removes the space between img(image elements).  */
+    float: left;
+}
